@@ -16,9 +16,11 @@ $(document).ready(function() {
                 var tmp = "";
 
                 for(i = 0; i<data[key].length; i++) {
-                    tmp += '<input type = "checkbox" name="'+ data[key][i] + '" class="custom" id="'+ data[key][i] + '"  /><label for="'+ data[key][i] + '">'+ data[key][i] + '</label>';
+                    tmp += '<input type = "checkbox" name="'+ data[key][i].replace(/\s/g,"-") + '" class="custom" id="'+ data[key][i].replace(/\s/g,"-") + '"  /><label for="'+ data[key][i].replace(/\s/g,"-") + '">'+ data[key][i] + '</label>';
                 }
-                $("#firstlist").append('<li><a href="#">'+ key + '</a><div data-role="fieldcontain">'+tmp + '</div></li>');
+                $("#firstlist").append('<li><a href="#show-'+key+'">'+ key + '</a></li>');
+				$("body").append('<div data-role="page" data-url="show-'+key+'"><div data-role="header"><h1>'+ key +'</h1></div><div data-role="content">'+tmp+'</div></div>');
+				//$("#firstlist").append('<li><a href="#">'+ key + '</a><div data-role="fieldcontain">'+tmp + '</div></li>');
             }
             $('ul').listview('refresh');
         }
