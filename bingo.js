@@ -37,14 +37,14 @@ $(document).ready(function() {
                 }
                 $("#firstlist").append('<li><a href="#show-'+key+'">'+ key + '</a></li>');
                 $("body").append('<div data-role="page" data-url="show-'+key+'" id="show-'+key+'"><div data-role="header"><h1>'+ key +'</h1></div><div data-role="content">'+tmp+'</div></div>');
-                //$("#firstlist").append('<li><a href="#">'+ key + '</a><div data-role="fieldcontain">'+tmp + '</div></li>');
-                $("#show-"+key+" input[type='checkbox']").change( function(el) {
+                $("#show-"+key+" input[type='checkbox']").change( function() {
                     count++;
 					
                     // Bingo
                     if(count>=5) {
                         $("audio").get(0).play();
                         alert("Du hast gewonnen");
+                        window.location.reload(true);
                         count=0;
                     }
                 });

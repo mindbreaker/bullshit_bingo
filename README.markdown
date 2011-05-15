@@ -1,12 +1,13 @@
-== Bullshit Bingo
+## Bullshit Bingo
 Bullshit Bingo is the mobile web version of Bingo.
 
-== How it works
+## How it works
 Open the [demo](http://tom.multimediatechnology.at/bullshitbingo/) and select a category.
 Now you have 5 items that you can select and if all items are selected you win.
 
 #### Own Items
 To add your own items, create a File in JSON Format and edit the URL:
+
     url: 'http://buzzwords.tladesignz.com/data.pl',
 	
 	data({
@@ -14,5 +15,5 @@ To add your own items, create a File in JSON Format and edit the URL:
         "items",
 
 
-== Some Notes
+## Some Notes
 (c) [Alex](https://github.com/Falex), [Matthias](https://github.com/mattherick) and [Tom](https://github.com/mindbreaker) for FH Salzburg
