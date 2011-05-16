@@ -17,3 +17,4 @@ To add your own items, create a File in JSON Format and edit the URL:
 
 ## Some Notes
 (c) [Alex](https://github.com/Falex), [Matthias](https://github.com/mattherick) and [Tom](https://github.com/mindbreaker) for FH Salzburg
+The Audio is licensed under a [Creative Commons Sampling Plus 1.0 License](http://creativecommons.org/licenses/sampling+/1.0/) and available under (http://www.freesound.org/samplesViewSingle.php?id=117120)[freesounds.org].
